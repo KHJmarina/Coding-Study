@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>강혜정 - KT넥스알 코딩테스트</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link rel='stylesheet' href='KHJ_KTest.css' type='text/css' />
+        <script src="KHJ_KTest.js" type="text/javascript" ></script>
+    </head>
+    <body>
+        <div>
+            <aside></aside> <!-- 좌측 menu bar -->
+            <div class="container">
+                <!-- 메인 타이틀 -->
+                <div class="top_area">
+                    <i class="mdi mdi-book-outline"></i>
+                    <div class="main_tit">내 서재</div>
+                </div>
+
+                <!-- start -->
+                <!-- 6개 이상 -->
+                <div class="cont_area case1">
+                    <div class="cont_tit">
+                        <span>회전목마 case 1</span>
+                        <span>full contents일 경우 최초 진입</span>
+                    </div>
+
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 슬라이드 생성 구간 -->
+                            <!-- <div class="swiper-slide"></div> -->
+                        </div>
+                        <div class="swiper-button-prev"></div>
+			            <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+
+                <!-- 3개 이하 -->
+                <div class="cont_area case2">
+                    <div class="cont_tit">
+                        <span>회전목마 case 2</span>
+                        <span>small contents일 경우 최초 진입</span>
+                    </div>
+
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 슬라이드 생성 구간 -->
+                        </div>
+                        <div class="swiper-button-prev"></div>
+			            <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+/* 스와이프1 */
+var mySwiper = new Swiper('.case1 .swiper-container', {
+  slidesPerView: 1, // 슬라이드 갯수
+  autoHeight : true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+/* 스와이프2 */
+var mySwiper = new Swiper('.case2 .swiper-container', {
+  slidesPerView: 1, // 슬라이드 갯수
+  watchOverflow : false,
+  autoHeight : true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+</script>

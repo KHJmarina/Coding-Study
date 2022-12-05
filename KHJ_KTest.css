@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css);
+
+*, body, h1, h2, h3, h4, h5, h6, p, a, button, input, dl, dd {
+    font-family: 'Noto Sans CJK KR', Noto Sans KR, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+  }
+aside {
+    background: url('img/sideBar_1.png') no-repeat;
+    background-size: 100%;
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.container {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: auto;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.top_area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 68px 32px 32px;
+    gap: 26px;
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.top_area .main_tit {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.mdi.mdi-book-outline {
+    font-size: 24px;
+    line-height: 24px;
+    color:#FF893C;
+}
+
+.cont_area {
+    padding: 32px;
+}
+.cont_area .cont_tit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+.cont_area .cont_tit span:nth-child(1) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.cont_area .cont_tit span:nth-child(2) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.book_img {
+    display: inline-flex;
+    float: left;
+    margin: 8px;
+    background: url('img/book.png') no-repeat;
+    background-size: 100%;
+    width: 230px;
+    height: 260px;
+}
+.book_txt {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 20px 20px 10px;
+    width: 100%;
+}
+.book_txt h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 4px;
+    text-align: left;
+}
+.book_txt p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+.mdi.mdi-bookmark {
+    font-size: 40px;
+    position: relative;
+    top: -3px;
+    left: 40px;
+    color: #B2B2B2;
+}
+
+
+
+/* 스와이프 컨트롤 */
+.swiper-container {
+	width: 100%;
+	overflow: hidden;
+}
+.swiper-wrapper {
+    margin-left: 50px;
+    width: calc(100% - 50px);
+}
+.swiper-slide {
+    text-align:center;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: calc(var(--swiper-navigation-size)/ 20 * 32);
+}
+.case1 .swiper-button-next, .case1 .swiper-button-prev {
+    top: 330px;
+}
+.case2 .swiper-button-next, .case2 .swiper-button-prev {
+    top: 705px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: calc(var(--swiper-navigation-size)/ 70 * 22);
+	color: #999999;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 70px;
+}
+.case1 .swiper-button-next {
+    left: calc((246px * 6) + 142px);
+}
+.case2 .swiper-button-next {
+    left: calc((246px * 1) + 142px);
+}
+
+
+
+/* @media screen and (max-width:1024px) {} */
