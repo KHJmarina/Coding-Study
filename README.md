@@ -20,5 +20,6 @@ VS code로 만든 프론트엔드 포트폴리오입니다.
 - HTML, CSS, JavaScript, JQuery를 활용한 화면단 개발
 - figma 기반 디자인으로 코딩
 
+
 ## Skill
 > html, css, javascript, jquery
